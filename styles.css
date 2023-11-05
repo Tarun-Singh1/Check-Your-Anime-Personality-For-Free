@@ -1,0 +1,292 @@
+
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: url(images/bb.jpg) center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (0.5) for transparency */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(176, 246, 226);
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold; /* Make the text bolder */
+    animation: glow 2s linear infinite; /* Add a glow animation */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Add a shadow */
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(11, 222, 241, 0.8);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(139, 239, 144, 0.8), 0 0 30px rgba(86, 240, 240, 0.6)
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(170, 180, 244, 0.8)
+    }
+}
+
+.personality-section {
+    background: url(images/Perso.jpg) center/cover no-repeat; /* Replace with your background image URL */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.personality-content {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.personality-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.personality-content a {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.personality-content a:hover {
+    background-color: #0056b3;
+}
+
+
+/* Style the container to display cards in a row */
+
+.centered-heading {
+    text-align: center;
+    padding: 60px 0; /* Add space after the heading */
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fire-personality-section {
+    background: url(images/AN.jpg) center/cover no-repeat; /* Replace with your background image URL */
+    text-align: center;
+    color: white;
+}
+/* Style each personality card */
+.personality-card {
+    width: 200px; /* Adjust the width as needed */
+    background: rgba(0, 0, 0, 0.4);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Style the circular images */
+.personality-card img {
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    width: 100px; /* Adjust the width and height as needed */
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Style the personality type (H3) */
+.personality-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Style the introductory text */
+.personality-card p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Style the "View More" button */
+.personality-card .view-more-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.personality-card .view-more-button:hover {
+    background-color: #0056b3;
+}
+
+/* Existing code above... */
+
+/* Style each personality card with hover animation */
+.personality-card {
+    width: 200px; /* Adjust the width as needed */
+    background: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s; /* Add a transition for the zoom effect */
+}
+
+/* Add hover effect for zooming in */
+.personality-card:hover {
+    transform: scale(1.1); /* Zoom in by 10% */
+}
+
+/* Style the circular images */
+.personality-card img {
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    width: 100px; /* Adjust the width and height as needed */
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Style the personality type (H3) */
+.personality-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Style the introductory text */
+.personality-card p {
+    font-size: 16px;
+    margin: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Style the "View More" button */
+.personality-card .view-more-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.personality-card .view-more-button:hover {
+    background-color: #0056b3;
+}
+/* Existing code above... */
+
+/* Style the H2 element (Architect) */
+.personality-card h2 {
+    font-family: 'YourCustomFont', sans-serif; /* Replace 'YourCustomFont' with the desired font family */
+    color: rgb(230, 163, 240); /* Replace with the desired color code */
+    font-size: 28px; /* Adjust the font size as needed */
+    font-weight: bold;
+}
+
+/* Style the H3 element (INTJ-A / INTJ-T) */
+.personality-card h3 {
+    font-family: 'YourCustomFont', sans-serif; /* Replace 'YourCustomFont' with the desired font family */
+    color: rgb(255, 255, 255); /* Replace with the desired color code */
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: normal;
+}
+
+.fire-personality-section-2 {
+    background: url(images/DI.jpg) center/cover no-repeat; /* Replace with the URL of your second background image */
+    text-align: center;
+    color: white;
+}
+
+/* Style the third fire-personality-section */
+.fire-personality-section-3 {
+    background: url(images/SE.jpg) center/cover no-repeat; /* Replace with the URL of your third background image */
+    text-align: center;
+    color: white;
+}
+
+/* Style the fourth fire-personality-section */
+.fire-personality-section-4 {
+    background: url(images/XP.jpg) center/cover no-repeat; /* Replace with the URL of your fourth background image */
+    text-align: center;
+    color: white;
+}
+
+.h2-color-2 {
+    color: #98f698 !important; /* Change the color for the second section */
+}
+
+.h2-color-3 {
+    color: rgb(94, 204, 241) !important; /* Change the color for the second section */
+}
+
+.h2-color-4 {
+    color: rgb(240, 217, 127) !important; /* Change the color for the second section */
+}
+
+/* Style the footer */
+/* Your existing CSS code */
+
+/* Style the footer */
+.footer {
+    background: black; /* Set a black background color */
+    text-align: center;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+/* Add a unique animation to the footer */
+.footer::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgb(145, 3, 240), transparent); /* Create a gradient bar */
+    top: 0;
+    left: 0;
+    animation: slide 2s infinite; /* Add a sliding animation */
+}
+
+@keyframes slide {
+    0% {
+        right: 100%;
+    }
+    100% {
+        right: -100%;
+    }
+}

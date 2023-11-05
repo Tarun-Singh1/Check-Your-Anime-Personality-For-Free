@@ -1,0 +1,116 @@
+/* Reset default margin and padding */
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the character container */
+.character-container {
+    background: url(https://img.freepik.com/premium-photo/clear-blue-sky-background-anime-style_398492-432.jpg) center/cover no-repeat;  /* Set a black background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px; /* Add some padding */
+}
+
+/* Style the H1 element */
+.character-container h1 {
+    font-family: 'YourCustomFont', sans-serif; /* Replace 'YourCustomFont' with the desired font family */
+    font-size: 40px; /* Adjust the font size as needed */
+    margin: 20px 0;
+    color: rgb(135, 237, 157);
+    animation: fadeIn 2s ease; /* Add a fade-in animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Style the container for character images */
+.character-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center character images horizontally */
+    align-content: flex-start; /* Start from the top of the container */
+    max-width: 1000px;
+    background: rgba(0, 0, 0, 0.4); /* Add a semi-transparent background */
+}
+
+/* Style each character */
+.character {
+    width: 200px; /* Adjust the width as needed */
+    text-align: center;
+    margin: 10px;
+    border-radius: 50%; /* Create a circular shape */
+    padding: 10px; /* Add some padding */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Add a white shadow for contrast */
+    transition: transform 0.3s ease; /* Add a zoom-in effect on hover */
+}
+
+/* Add a hover effect to zoom in the character image */
+.character:hover {
+    transform: scale(1.1);
+}
+
+/* Style the circular character images */
+.character img {
+    border-radius: 50%;
+    width: 150px; /* Adjust the width and height as needed */
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Add a zoom-in effect on hover */
+}
+
+/* Add a hover effect to zoom in the character image */
+.character img:hover {
+    transform: scale(1.1);
+}
+
+/* Style the character name (H2) */
+.character h2 {
+    font-size: 16px; /* Adjust the font size as needed */
+    margin: 10px 0;
+    transition: color 0.3s ease; /* Add a color change effect on hover */
+}
+
+/* Add a hover effect to change the text color on character name */
+.character:hover h2 {
+    color: #FFD700; /* Change to gold color on hover */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .character {
+        width: 45%; /* Adjust for smaller screens */
+    }
+}
+
+/* Style the container for the "View More" button */
+.character-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    animation: fadeIn 2s ease; /* Add a fade-in animation */
+}
+
+/* Style the "View More" button */
+.view-more-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.view-more-button:hover {
+    background-color: #0056b3;
+}
